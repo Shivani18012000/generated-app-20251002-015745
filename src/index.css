@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+  :root {
+    /* SerenityScheduler Palette - Light */
+    --background: 36 67% 98%; /* Off-white: rgb(253, 251, 247) */
+    --foreground: 215 21% 23%; /* Charcoal: rgb(45, 55, 72) */
+    --card: 36 67% 98%;
+    --card-foreground: 215 21% 23%;
+    --popover: 36 67% 98%;
+    --popover-foreground: 215 21% 23%;
+    --primary: 7 28% 72%; /* Dusty Rose: rgb(209, 166, 160) */
+    --primary-foreground: 36 67% 98%;
+    --secondary: 36 10% 94%;
+    --secondary-foreground: 215 21% 23%;
+    --muted: 36 10% 90%;
+    --muted-foreground: 215 15% 45%;
+    --accent: 36 10% 94%;
+    --accent-foreground: 215 21% 23%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 36 67% 98%;
+    --border: 36 10% 88%;
+    --input: 36 10% 88%;
+    --ring: 7 28% 72%;
+    --radius: 0.5rem;
+  }
+  .dark {
+    /* SerenityScheduler Palette - Dark */
+    --background: 215 21% 15%; /* Darker Charcoal */
+    --foreground: 36 67% 96%; /* Lighter Off-white */
+    --card: 215 21% 15%;
+    --card-foreground: 36 67% 96%;
+    --popover: 215 21% 15%;
+    --popover-foreground: 36 67% 96%;
+    --primary: 7 28% 72%; /* Dusty Rose */
+    --primary-foreground: 215 21% 11%;
+    --secondary: 215 21% 20%;
+    --secondary-foreground: 36 67% 96%;
+    --muted: 215 21% 20%;
+    --muted-foreground: 36 10% 70%;
+    --accent: 215 21% 20%;
+    --accent-foreground: 36 67% 96%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 36 67% 96%;
+    --border: 215 21% 25%;
+    --input: 215 21% 25%;
+    --ring: 7 28% 72%;
+  }
+  * {
+    @apply border-border;
+  }
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: 'cv02', 'cv03', 'cv04', 'cv11';
+    text-rendering: optimizeLegibility;
+  }
+}
